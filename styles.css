@@ -20,9 +20,9 @@ body{
     margin: 70px ;
     padding-left: 30px;
     padding-right: 50px;
-    color:#2e0707;
+    color:#4c1265;
     justify-content: space-between;
-    background: linear-gradient(135deg, #8173fb,#95cdf6);
+    background: linear-gradient(135deg, #524ae8, #efd2d2);/* light blue  is purple idk looks cool gradient */;
     border-radius:20px;
     width: 100%;
 }
@@ -31,11 +31,12 @@ body{
     border: 0;
     justify-content: center;
     padding: 10px 10px;
-    height: 30px;
-    width: auto;
+    height: 45px;
+    width: 250px;
+    font-size: 18px;
     justify-content: space-between;
     text-align: center;
-    margin-right: 5px;
+    margin-left:70px;
     flex: 1;
     margin-bottom: 30px;
    
@@ -58,10 +59,51 @@ body{
      gap: 8px;
      margin: 0 auto;
      text-align: center;
+    
 }
 
 .weather img{
-    height: 80px;
+    height: 150px;
     display: block;
     margin: 0;
+    margin-right:20px;
+}
+
+.weather div > p{
+    font-size: 25px;
+    font-family: "poppins", sans-serif;
+}
+.temperature{
+    font-size: 65px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.description{
+     font-size: 65px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 40px;
+
+}
+.col{
+    display: flex;
+   text-align: left;
+    align-items: left;
+}
+.col img{
+    width: 50px;
+    margin-right: 60px;
+    height: auto;
+    margin-left:20px;
+
+}
+.col div p{
+    font-size: 28px;
+    font-family: "poppins", sans-serif;
+    margin-left:auto;
 }
