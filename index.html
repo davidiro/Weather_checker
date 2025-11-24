@@ -13,8 +13,10 @@
 
             <div class="weather">
             <img src = "images/rain_image.png" class = "weather_icon">
-            <div class="temperature">25°C</div>
-            <div class="description">New York</div>
+            <div class="temperature">25°C
+                
+            </div>
+            <div class="city">New York</div>
 
            <div class="details">
              <div class = "col 1"> 
@@ -43,5 +45,37 @@
         
     </div>
       
+<script>
+    const apikey = "b19802ec4be9702688b7a6ac72ffdaab"; //api kep from openweathermap
+    const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric"
 
+  
+
+    //asyn finction to fetch weather data from api
+    async function checkWeather(city){
+        const response = await fetch (apiUrl + "&q= " + city + "&appid=" + apikey);
+        const data = await response.json();
+
+        //change widget data to match api data
+        document.querySelector(".temperature").innerHTML = Math.round(data.main.temp) +"°C";
+        document.querySelector(".city").innerHTML = data.name;
+        document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
+        document.querySelector(".wind").innerHTML = data.wind.speed + "km/hr";
+
+            //confirm if city is found
+        if(!response.ok){
+            alert("City not found");
+        }
+
+        // console.log(data);
+
+    }
+    const searchBox = document.querySelector(".search input");
+   const searchBtn = document.querySelector(".search button");
+    //event listener to search button
+    searchBtn.addEventListener("click", ()=>{
+        checkWeather(searchBox.value);
+    });
+
+</script>
 </body>
