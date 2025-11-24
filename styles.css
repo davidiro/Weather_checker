@@ -1,0 +1,42 @@
+*{
+    font-family: "poppins", sans-serif;
+    box-sizing:   border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background : #222
+}
+.card{
+    display:flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #524ae8, #efd2d2);/* light red gradient */;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 470px;/* keep the card from getting too wide on large screens */;
+    margin: 100px auto 0; /* centering the card with some top and bottom margin */;
+}
+.search{
+    margin: 70px ;
+    padding-left: 30px;
+    padding-right: 50px;
+    color:#2e0707;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #8173fb,#95cdf6);
+    border-radius:6px;
+    width: 100%;
+}
+.search input{
+    border-radius: 20px;
+    margin-bottom: 40px;
+    padding: 70px 50px;
+    height: 30px;
+    width: auto;;
+    text-align: center;
+    margin-right:20px;
+      
+}
+.search button{
+    border-radius: 20px;
+    
+}
