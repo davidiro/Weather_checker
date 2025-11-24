@@ -10,7 +10,7 @@ body{
 .card{
     display:flex;
     justify-content: center;
-    background: linear-gradient(135deg, #524ae8, #efd2d2);/* light red gradient */;
+    background: linear-gradient(135deg, #524ae8, #efd2d2);/* light blue  is purple idk looks cool gradient */;
     border-radius: 20px;
     width: 90%;
     max-width: 470px;/* keep the card from getting too wide on large screens */;
@@ -23,20 +23,45 @@ body{
     color:#2e0707;
     justify-content: space-between;
     background: linear-gradient(135deg, #8173fb,#95cdf6);
-    border-radius:6px;
+    border-radius:20px;
     width: 100%;
 }
 .search input{
     border-radius: 20px;
-    margin-bottom: 40px;
-    padding: 70px 50px;
+    border: 0;
+    justify-content: center;
+    padding: 10px 10px;
     height: 30px;
-    width: auto;;
+    width: auto;
+    justify-content: space-between;
     text-align: center;
-    margin-right:20px;
+    margin-right: 5px;
+    flex: 1;
+    margin-bottom: 30px;
+   
       
 }
+
 .search button{
     border-radius: 20px;
+    height: 60px;
     
+}
+.search button imga{
+    width: 20px;
+}
+.weather{
+     display: flex;
+     flex-direction: column;/* stack items vertically */
+     align-items: center;
+     justify-content: center;
+     gap: 8px;
+     margin: 0 auto;
+     text-align: center;
+}
+
+.weather img{
+    height: 80px;
+    display: block;
+    margin: 0;
 }
